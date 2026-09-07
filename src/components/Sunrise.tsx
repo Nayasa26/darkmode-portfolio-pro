@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
 /**
- * Layered pink-to-orange sunrise: three blurred cloud planes plus a rising sun
- * disc, each moving at a different rate on scroll to fake depth.
+ * Layered pink-to-orange sunrise along the bottom of the hero: three blurred
+ * cloud planes plus a rising sun disc, each moving at a different rate on
+ * scroll to fake depth.
  */
 export function Sunrise() {
   const [offset, setOffset] = useState(0);
@@ -17,28 +18,30 @@ export function Sunrise() {
   return (
     <div className="sunrise-stage pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       <div
-        className="sun-disc absolute bottom-[-26%] left-[72%] size-[30rem] rounded-full opacity-70"
+        className="sun-disc absolute bottom-[-22%] left-[62%] size-[26rem] rounded-full opacity-90"
         style={{ marginBottom: offset * -0.18 }}
       />
       <div
-        className="cloud-layer absolute inset-x-[-20%] bottom-[-18%] h-[46%] opacity-60"
+        className="cloud-layer absolute inset-x-[-20%] bottom-[-14%] h-[38%] opacity-90"
         style={{ transform: `translate3d(0, ${offset * -0.06}px, 0)` }}
       />
       <div
-        className="cloud-layer absolute inset-x-[-25%] bottom-[-26%] h-[38%] opacity-45"
+        className="cloud-layer absolute inset-x-[-25%] bottom-[-22%] h-[30%] opacity-70"
         style={{
           transform: `translate3d(0, ${offset * -0.12}px, 0) scale(1.15)`,
           animationDelay: "-9s",
         }}
       />
       <div
-        className="cloud-layer absolute inset-x-[-10%] bottom-[-8%] h-[26%] opacity-35"
+        className="cloud-layer absolute inset-x-[-10%] bottom-[-6%] h-[20%] opacity-50"
         style={{
           transform: `translate3d(0, ${offset * -0.2}px, 0)`,
           animationDelay: "-16s",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/55 to-background/85" />
+      {/* fade the sunrise out toward the content above and into the page below */}
+      <div className="absolute inset-x-0 top-0 h-[62%] bg-gradient-to-b from-background via-background/85 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-background to-transparent" />
     </div>
   );
 }
