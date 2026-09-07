@@ -22,7 +22,7 @@ export function Reveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" },
+      { threshold: 0.05, rootMargin: "0px 0px -40px 0px" },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -31,8 +31,12 @@ export function Reveal({
   return (
     <div
       ref={ref}
-      className={`reveal ${shown ? "reveal-in" : ""} ${className}`}
-      style={{ animationDelay: `${delay}ms` }}
+      className={className}
+      style={{
+        opacity: shown ? 1 : 0,
+        transform: shown ? "translateY(0)" : "translateY(28px)",
+        transition: `opacity 0.8s cubic-bezier(0.22,1,0.36,1) ${delay}ms, transform 0.8s cubic-bezier(0.22,1,0.36,1) ${delay}ms`,
+      }}
     >
       {children}
     </div>
