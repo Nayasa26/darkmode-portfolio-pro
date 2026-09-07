@@ -204,3 +204,87 @@
 @utility pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
 }
+
+/* --- Sunrise depth layers: pink clouds warming into orange --- */
+
+@theme inline {
+  --color-cloud-pink: var(--cloud-pink);
+  --color-cloud-orange: var(--cloud-orange);
+}
+
+:root {
+  --cloud-pink: oklch(0.78 0.15 350);
+  --cloud-orange: oklch(0.8 0.16 55);
+  --cloud-amber: oklch(0.86 0.15 80);
+}
+
+@keyframes sun-rise {
+  from {
+    transform: translate3d(-50%, 40%, 0) scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(-50%, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translate3d(-4%, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(4%, -3%, 0) scale(1.06);
+  }
+  100% {
+    transform: translate3d(-4%, 0, 0) scale(1);
+  }
+}
+
+@keyframes warm-shift {
+  0%,
+  100% {
+    filter: hue-rotate(0deg) saturate(115%);
+  }
+  50% {
+    filter: hue-rotate(28deg) saturate(140%);
+  }
+}
+
+@utility sunrise-stage {
+  perspective: 900px;
+  transform-style: preserve-3d;
+}
+
+@utility sun-disc {
+  background: radial-gradient(
+    circle at 50% 50%,
+    color-mix(in oklab, var(--cloud-amber) 92%, transparent) 0%,
+    color-mix(in oklab, var(--cloud-orange) 70%, transparent) 42%,
+    transparent 72%
+  );
+  filter: blur(6px);
+  animation: sun-rise 2.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@utility cloud-layer {
+  background: radial-gradient(
+      ellipse 60% 70% at 22% 60%,
+      color-mix(in oklab, var(--cloud-pink) 55%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 55% 60% at 62% 40%,
+      color-mix(in oklab, var(--cloud-orange) 45%, transparent),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 50% 55% at 85% 70%,
+      color-mix(in oklab, var(--cloud-amber) 40%, transparent),
+      transparent 70%
+    );
+  filter: blur(46px);
+  animation:
+    cloud-drift 26s ease-in-out infinite,
+    warm-shift 18s ease-in-out infinite;
+}

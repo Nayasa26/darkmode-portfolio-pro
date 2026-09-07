@@ -20,6 +20,7 @@ import {
 import { toast } from "sonner";
 
 import { Reveal } from "@/components/Reveal";
+import { Sunrise } from "@/components/Sunrise";
 import profileImage from "@/assets/profile.jpg";
 
 export const Route = createFileRoute("/")({
@@ -55,7 +56,7 @@ const aboutCards = [
   {
     icon: Terminal,
     title: "Who I am",
-    body: "Third-year software engineering student obsessed with clean architecture, developer experience and shipping things people actually use.",
+    body: "First-year software engineering student obsessed with clean architecture, developer experience and shipping things people actually use.",
   },
   {
     icon: Layers,
@@ -179,11 +180,12 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="glow-grid relative overflow-hidden pt-36 pb-24 md:pt-44 md:pb-32">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 md:grid-cols-[1.15fr_0.85fr]">
+      <Sunrise />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 md:grid-cols-[1.15fr_0.85fr]">
         <Reveal>
           <span className="glass-panel inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground">
             <span className="pulse-glow inline-block size-2 rounded-full bg-primary" />
-            Open to 2027 internships
+            First-year student · open to internships
           </span>
           <h1 className="mt-6 text-5xl leading-[1.05] font-bold md:text-7xl">
             I turn messy ideas into <span className="text-gradient">software that ships.</span>
@@ -234,7 +236,7 @@ function Hero() {
               <div className="flex items-center justify-between px-3 py-4">
                 <div>
                   <p className="font-display text-sm font-semibold">Aarav Mehta</p>
-                  <p className="text-xs text-muted-foreground">B.Tech CSE · Class of 2027</p>
+                  <p className="text-xs text-muted-foreground">B.Tech CSE · First year</p>
                 </div>
                 <div className="flex gap-2">
                   <a
