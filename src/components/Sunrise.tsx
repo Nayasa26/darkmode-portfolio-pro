@@ -17,28 +17,28 @@ export function Sunrise() {
   return (
     <div className="sunrise-stage pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       <div
-        className="sun-disc absolute bottom-[8%] left-1/2 size-[42rem] rounded-full opacity-80"
+        className="sun-disc absolute bottom-[-16%] left-1/2 size-[34rem] rounded-full opacity-45"
         style={{ marginBottom: offset * -0.18 }}
       />
       <div
-        className="cloud-layer absolute inset-x-[-20%] bottom-[-18%] h-[62%] opacity-55"
+        className="cloud-layer absolute inset-x-[-20%] bottom-[-18%] h-[46%] opacity-35"
         style={{ transform: `translate3d(0, ${offset * -0.06}px, 0)` }}
       />
       <div
-        className="cloud-layer absolute inset-x-[-25%] bottom-[-26%] h-[52%] opacity-40"
+        className="cloud-layer absolute inset-x-[-25%] bottom-[-26%] h-[38%] opacity-25"
         style={{
           transform: `translate3d(0, ${offset * -0.12}px, 0) scale(1.15)`,
           animationDelay: "-9s",
         }}
       />
       <div
-        className="cloud-layer absolute inset-x-[-10%] bottom-[-8%] h-[36%] opacity-30"
+        className="cloud-layer absolute inset-x-[-10%] bottom-[-8%] h-[26%] opacity-20"
         style={{
           transform: `translate3d(0, ${offset * -0.2}px, 0)`,
           animationDelay: "-16s",
         }}
       />
-      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/85" />
     </div>
   );
 }
