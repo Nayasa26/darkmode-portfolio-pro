@@ -55,7 +55,7 @@ const aboutCards = [
   {
     icon: Terminal,
     title: "Who I am",
-    body: "Third-year software engineering student obsessed with clean architecture, developer experience and shipping things people actually use.",
+    body: "First-year software engineering student obsessed with clean architecture, developer experience and shipping things people actually use.",
   },
   {
     icon: Layers,
@@ -234,7 +234,7 @@ function Hero() {
               <div className="flex items-center justify-between px-3 py-4">
                 <div>
                   <p className="font-display text-sm font-semibold">Aarav Mehta</p>
-                  <p className="text-xs text-muted-foreground">B.Tech CSE · Class of 2027</p>
+                  <p className="text-xs text-muted-foreground">B.Tech CSE · First year</p>
                 </div>
                 <div className="flex gap-2">
                   <a
