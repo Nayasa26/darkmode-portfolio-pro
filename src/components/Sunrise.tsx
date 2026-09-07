@@ -17,7 +17,7 @@ export function Sunrise() {
   return (
     <div className="sunrise-stage pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       <div
-        className="sun-disc absolute bottom-[-16%] left-1/2 size-[34rem] rounded-full opacity-45"
+        className="sun-disc absolute bottom-[-26%] left-[72%] size-[30rem] rounded-full opacity-40"
         style={{ marginBottom: offset * -0.18 }}
       />
       <div
@@ -38,7 +38,7 @@ export function Sunrise() {
           animationDelay: "-16s",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/85" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/80 to-background/92" />
     </div>
   );
 }
