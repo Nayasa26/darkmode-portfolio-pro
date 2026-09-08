@@ -191,8 +191,8 @@ function Hero() {
             I turn messy ideas into <span className="text-gradient">software that ships.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Software engineering student, systems tinkerer and interface perfectionist. I build
-            products that feel fast, look sharp and hold up under load.
+            First-year software engineering student with big curiosity. I'm learning to build
+            things that feel fast, look sharp and actually work.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
