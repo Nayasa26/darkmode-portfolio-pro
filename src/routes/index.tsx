@@ -56,22 +56,22 @@ const aboutCards = [
   {
     icon: Terminal,
     title: "Who I am",
-    body: "First-year software engineering student obsessed with clean architecture, developer experience and shipping things people actually use.",
+    body: "First-year software engineering student learning fast — falling in love with clean code, small side projects and shipping my first real things.",
   },
   {
     icon: Layers,
     title: "What I build",
-    body: "Full-stack web apps, developer tooling and small distributed systems — usually TypeScript on the edge with a Postgres core.",
+    body: "Coursework projects, hackathon prototypes and weekend experiments — mostly TypeScript and Python, with growing confidence in web and systems basics.",
   },
   {
     icon: Sparkles,
     title: "How I work",
-    body: "Prototype fast, measure, then refine. I care about the last 10% — motion, spacing, empty states and error messages.",
+    body: "Ask lots of questions, build small, iterate. I care about details early — motion, spacing and making things feel polished even while learning.",
   },
   {
     icon: MapPin,
     title: "Right now",
-    body: "Looking for a 2027 software engineering internship. Open to backend, platform or product-focused frontend teams.",
+    body: "Building fundamentals this year and looking for beginner-friendly internships or open-source work to grow into.",
   },
 ];
 
@@ -210,9 +210,9 @@ function Hero() {
           </div>
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6">
             {[
-              ["12+", "Shipped projects"],
-              ["3", "Hackathon wins"],
-              ["9.1", "GPA / 10"],
+              ["5+", "Class & side projects"],
+              ["1", "Hackathon attended"],
+              ["Yr 1", "Just getting started"],
             ].map(([value, label]) => (
               <div key={label}>
                 <dt className="font-display text-3xl font-bold text-gradient">{value}</dt>
@@ -315,7 +315,7 @@ function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Selected work"
-          blurb="A mix of coursework taken too far and side projects that found real users."
+          blurb="Coursework taken too far, hackathon builds and weekend experiments — early days, but every project taught me something."
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {projects.map((project, i) => (
