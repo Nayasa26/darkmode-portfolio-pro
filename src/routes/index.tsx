@@ -26,17 +26,17 @@ import profileImage from "@/assets/profile.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aarav Mehta — Software Engineering Student & Builder" },
+      { title: "Nayasa Gandhi — Software Engineering Student & Builder" },
       {
         name: "description",
         content:
-          "Portfolio of Aarav Mehta, a software engineering student building fast, thoughtful web and systems projects in TypeScript, Python and Go.",
+          "Portfolio of Nayasa Gandhi, a software engineering student building fast, thoughtful web and systems projects in TypeScript, Python and Go.",
       },
-      { property: "og:title", content: "Aarav Mehta — Software Engineering Student & Builder" },
+      { property: "og:title", content: "Nayasa Gandhi — Software Engineering Student & Builder" },
       {
         property: "og:description",
         content:
-          "Projects, skills and contact details for Aarav Mehta, a software engineering student who ships polished products.",
+          "Projects, skills and contact details for Nayasa Gandhi, a software engineering student who ships polished products.",
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -56,22 +56,22 @@ const aboutCards = [
   {
     icon: Terminal,
     title: "Who I am",
-    body: "First-year software engineering student obsessed with clean architecture, developer experience and shipping things people actually use.",
+    body: "First-year software engineering student learning fast — falling in love with clean code, small side projects and shipping my first real things.",
   },
   {
     icon: Layers,
     title: "What I build",
-    body: "Full-stack web apps, developer tooling and small distributed systems — usually TypeScript on the edge with a Postgres core.",
+    body: "Coursework projects, hackathon prototypes and weekend experiments — mostly TypeScript and Python, with growing confidence in web and systems basics.",
   },
   {
     icon: Sparkles,
     title: "How I work",
-    body: "Prototype fast, measure, then refine. I care about the last 10% — motion, spacing, empty states and error messages.",
+    body: "Ask lots of questions, build small, iterate. I care about details early — motion, spacing and making things feel polished even while learning.",
   },
   {
     icon: MapPin,
     title: "Right now",
-    body: "Looking for a 2027 software engineering internship. Open to backend, platform or product-focused frontend teams.",
+    body: "Building fundamentals this year and looking for beginner-friendly internships or open-source work to grow into.",
   },
 ];
 
@@ -153,7 +153,7 @@ function Nav() {
         }`}
       >
         <a href="#top" className="font-display text-sm font-bold tracking-tight">
-          aarav<span className="text-gradient">.dev</span>
+          nayasa<span className="text-gradient">.dev</span>
         </a>
         <div className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
@@ -191,8 +191,8 @@ function Hero() {
             I turn messy ideas into <span className="text-gradient">software that ships.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Software engineering student, systems tinkerer and interface perfectionist. I build
-            products that feel fast, look sharp and hold up under load.
+            First-year software engineering student with big curiosity. I'm learning to build
+            things that feel fast, look sharp and actually work.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
@@ -210,9 +210,9 @@ function Hero() {
           </div>
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6">
             {[
-              ["12+", "Shipped projects"],
-              ["3", "Hackathon wins"],
-              ["9.1", "GPA / 10"],
+              ["5+", "Class & side projects"],
+              ["1", "Hackathon attended"],
+              ["Yr 1", "Just getting started"],
             ].map(([value, label]) => (
               <div key={label}>
                 <dt className="font-display text-3xl font-bold text-gradient">{value}</dt>
@@ -228,14 +228,16 @@ function Hero() {
             <div className="glass-panel relative overflow-hidden rounded-[2rem] p-3">
               <img
                 src={profileImage}
-                alt="Stylised neon portrait of Aarav Mehta, software engineering student"
+                alt="Stylised neon portrait of Nayasa Gandhi, software engineering student"
                 width={816}
                 height={816}
                 className="w-full rounded-[1.5rem] object-cover"
               />
               <div className="flex items-center justify-between px-3 py-4">
                 <div>
-                  <p className="font-display text-sm font-semibold">Aarav Mehta</p>
+                  <p className="font-display text-2xl font-bold tracking-[0.08em] text-gradient uppercase">
+                    Nayasa Gandhi
+                  </p>
                   <p className="text-xs text-muted-foreground">B.Tech CSE · First year</p>
                 </div>
                 <div className="flex gap-2">
@@ -313,7 +315,7 @@ function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Selected work"
-          blurb="A mix of coursework taken too far and side projects that found real users."
+          blurb="Coursework taken too far, hackathon builds and weekend experiments — early days, but every project taught me something."
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {projects.map((project, i) => (
@@ -444,10 +446,10 @@ function Contact() {
             </label>
             <div className="flex flex-wrap items-center justify-between gap-4">
               <a
-                href="mailto:hello@aarav.dev"
+                href="mailto:hello@nayasa.dev"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Mail className="size-4" /> hello@aarav.dev
+                <Mail className="size-4" /> hello@nayasa.dev
               </a>
               <button
                 type="submit"
@@ -476,7 +478,7 @@ function Portfolio() {
         <Contact />
       </main>
       <footer className="border-t border-border py-8 text-center text-xs text-muted-foreground">
-        Designed and built by Aarav Mehta · {new Date().getFullYear()}
+        Designed and built by Nayasa Gandhi · {new Date().getFullYear()}
       </footer>
     </div>
   );
