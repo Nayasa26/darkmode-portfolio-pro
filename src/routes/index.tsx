@@ -235,7 +235,9 @@ function Hero() {
               />
               <div className="flex items-center justify-between px-3 py-4">
                 <div>
-                  <p className="font-display text-sm font-semibold">Aarav Mehta</p>
+                  <p className="font-display text-2xl font-bold tracking-[0.08em] text-gradient uppercase">
+                    Nayasa Gandhi
+                  </p>
                   <p className="text-xs text-muted-foreground">B.Tech CSE · First year</p>
                 </div>
                 <div className="flex gap-2">
