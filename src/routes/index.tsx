@@ -26,17 +26,17 @@ import profileImage from "@/assets/profile.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aarav Mehta — Software Engineering Student & Builder" },
+      { title: "Nayasa Gandhi — Software Engineering Student & Builder" },
       {
         name: "description",
         content:
-          "Portfolio of Aarav Mehta, a software engineering student building fast, thoughtful web and systems projects in TypeScript, Python and Go.",
+          "Portfolio of Nayasa Gandhi, a software engineering student building fast, thoughtful web and systems projects in TypeScript, Python and Go.",
       },
-      { property: "og:title", content: "Aarav Mehta — Software Engineering Student & Builder" },
+      { property: "og:title", content: "Nayasa Gandhi — Software Engineering Student & Builder" },
       {
         property: "og:description",
         content:
-          "Projects, skills and contact details for Aarav Mehta, a software engineering student who ships polished products.",
+          "Projects, skills and contact details for Nayasa Gandhi, a software engineering student who ships polished products.",
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -153,7 +153,7 @@ function Nav() {
         }`}
       >
         <a href="#top" className="font-display text-sm font-bold tracking-tight">
-          aarav<span className="text-gradient">.dev</span>
+          nayasa<span className="text-gradient">.dev</span>
         </a>
         <div className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
@@ -228,7 +228,7 @@ function Hero() {
             <div className="glass-panel relative overflow-hidden rounded-[2rem] p-3">
               <img
                 src={profileImage}
-                alt="Stylised neon portrait of Aarav Mehta, software engineering student"
+                alt="Stylised neon portrait of Nayasa Gandhi, software engineering student"
                 width={816}
                 height={816}
                 className="w-full rounded-[1.5rem] object-cover"
@@ -444,10 +444,10 @@ function Contact() {
             </label>
             <div className="flex flex-wrap items-center justify-between gap-4">
               <a
-                href="mailto:hello@aarav.dev"
+                href="mailto:hello@nayasa.dev"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Mail className="size-4" /> hello@aarav.dev
+                <Mail className="size-4" /> hello@nayasa.dev
               </a>
               <button
                 type="submit"
@@ -476,7 +476,7 @@ function Portfolio() {
         <Contact />
       </main>
       <footer className="border-t border-border py-8 text-center text-xs text-muted-foreground">
-        Designed and built by Aarav Mehta · {new Date().getFullYear()}
+        Designed and built by Nayasa Gandhi · {new Date().getFullYear()}
       </footer>
     </div>
   );
