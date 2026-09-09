@@ -242,7 +242,7 @@ function Hero() {
                   <p className="text-xs text-muted-foreground">B.Tech CSE · First year</p>
                 </div>
                 <a
-                  href="mailto:gandhinayasa540@gmail.com"
+                  href="mailto:nayasagandhi47@gmail.com"
                   aria-label="Email Nayasa Gandhi"
                   className="glass-panel rounded-full p-2 transition-colors hover:border-primary"
                 >
@@ -438,10 +438,10 @@ function Contact() {
             </label>
             <div className="flex flex-wrap items-center justify-between gap-4">
               <a
-                href="mailto:gandhinayasa540@gmail.com"
+                href="mailto:nayasagandhi47@gmail.com"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Mail className="size-4" /> gandhinayasa540@gmail.com
+                <Mail className="size-4" /> nayasagandhi47@gmail.com
               </a>
               <button
                 type="submit"
