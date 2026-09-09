@@ -280,8 +280,8 @@ function About() {
     <section id="about" className="mx-auto max-w-6xl scroll-mt-28 px-6 py-24">
       <SectionHeading
         eyebrow="About me"
-        title="Curious by default, deliberate by habit"
-        blurb="I like problems that sit between good engineering and good taste."
+        title="Curious beginner, eager builder"
+        blurb="I'm at the start of my tech journey, learning something new every day."
       />
       <div className="mt-14 grid gap-5 md:grid-cols-2">
         {aboutCards.map((card, i) => (
@@ -350,8 +350,8 @@ function Skills() {
     <section id="skills" className="mx-auto max-w-6xl scroll-mt-28 px-6 py-24">
       <SectionHeading
         eyebrow="Skills"
-        title="The matrix"
-        blurb="Depth where it counts, breadth where it helps."
+        title="What I'm learning"
+        blurb="The tools, languages and foundations I'm picking up as I grow."
       />
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group, i) => (
@@ -387,9 +387,9 @@ function Contact() {
       <Reveal className="mx-auto max-w-3xl">
         <div className="glass-panel neon-ring rounded-3xl p-8 md:p-12">
           <p className="font-mono text-xs tracking-[0.3em] text-primary uppercase">Contact</p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">Let's build something</h2>
+          <h2 className="mt-3 text-3xl font-bold md:text-4xl">Let's connect</h2>
           <p className="mt-4 text-muted-foreground">
-            Internships, side projects or a quick chat about compilers — my inbox is open.
+            Internships, mentorship, hackathon teams or a quick chat about tech — my inbox is open.
           </p>
           <form
             className="mt-9 grid gap-5"
