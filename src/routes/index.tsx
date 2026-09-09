@@ -26,17 +26,17 @@ import profileImage from "@/assets/profile.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nayasa Gandhi — Software Engineering Student & Builder" },
+      { title: "Nayasa Gandhi — First-Year B.Tech CSE Student" },
       {
         name: "description",
         content:
-          "Portfolio of Nayasa Gandhi, a software engineering student building fast, thoughtful web and systems projects in TypeScript, Python and Go.",
+          "Portfolio of Nayasa Gandhi, a first-year B.Tech Computer Science student learning coding basics, AI tools and getting ready to build real projects.",
       },
-      { property: "og:title", content: "Nayasa Gandhi — Software Engineering Student & Builder" },
+      { property: "og:title", content: "Nayasa Gandhi — First-Year B.Tech CSE Student" },
       {
         property: "og:description",
         content:
-          "Projects, skills and contact details for Nayasa Gandhi, a software engineering student who ships polished products.",
+          "Follow Nayasa Gandhi's early computer-science journey: learning Python, JavaScript, AI tools and preparing for her first hackathons.",
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -56,49 +56,49 @@ const aboutCards = [
   {
     icon: Terminal,
     title: "Who I am",
-    body: "First-year software engineering student learning fast — falling in love with clean code, small side projects and shipping my first real things.",
-  },
-  {
-    icon: Layers,
-    title: "What I build",
-    body: "Coursework projects, hackathon prototypes and weekend experiments — mostly TypeScript and Python, with growing confidence in web and systems basics.",
+    body: "I'm Nayasa Gandhi, a first-year B.Tech Computer Science student starting in 2026. I'm curious about how software works and excited to learn by building.",
   },
   {
     icon: Sparkles,
-    title: "How I work",
-    body: "Ask lots of questions, build small, iterate. I care about details early — motion, spacing and making things feel polished even while learning.",
+    title: "What I'm exploring",
+    body: "AI tools that help me learn faster, the basics of Python and JavaScript, and how websites are designed and brought to life with code.",
+  },
+  {
+    icon: Layers,
+    title: "How I learn",
+    body: "I ask questions, follow tutorials, build tiny practice projects, and repeat. I believe small consistent steps turn a beginner into a builder.",
   },
   {
     icon: MapPin,
     title: "Right now",
-    body: "Building fundamentals this year and looking for beginner-friendly internships or open-source work to grow into.",
+    body: "Strengthening my programming foundations and getting ready to join my first hackathon. Open to internships, mentorship and beginner-friendly collaborations.",
   },
 ];
 
 const projects = [
   {
-    name: "Nebula CI",
-    tag: "Developer tooling",
-    body: "A lightweight CI runner that caches build graphs and cut pipeline times by 61% for my university robotics team.",
-    stack: ["Go", "Docker", "Redis"],
+    name: "AI Study Assistant",
+    tag: "Learning project",
+    body: "Experimenting with ChatGPT and Claude to break down complex topics, generate practice questions and speed up my first-year CS learning.",
+    stack: ["Prompt engineering", "Python basics", "Notion"],
   },
   {
-    name: "Lumen Notes",
-    tag: "Full-stack app",
-    body: "Realtime collaborative notes with offline sync, vector search and keyboard-first navigation. 1.2k monthly users.",
-    stack: ["React", "Postgres", "WebSockets"],
+    name: "Code Foundations",
+    tag: "Practice builds",
+    body: "A collection of small beginner programs — calculators, quizzes and to-do apps — as I learn variables, loops, functions and logic.",
+    stack: ["Python", "JavaScript", "HTML/CSS"],
   },
   {
-    name: "Transit Pulse",
-    tag: "Data visualisation",
-    body: "Live city bus reliability dashboard built on an open GTFS feed, streaming 40k events an hour into a rolling map view.",
-    stack: ["TypeScript", "D3", "Kafka"],
+    name: "Hackathon Prep",
+    tag: "Up next",
+    body: "Researching beginner-friendly hackathons, forming ideas and building the skills I need to contribute confidently to my first team project.",
+    stack: ["Teamwork", "Rapid learning", "Idea validation"],
   },
   {
-    name: "Kernel Lab",
-    tag: "Systems",
-    body: "A teaching-oriented toy operating system with a preemptive scheduler and virtual memory, written for a systems course.",
-    stack: ["C", "x86", "QEMU"],
+    name: "This Portfolio",
+    tag: "First website",
+    body: "The very site you're viewing — my first real web project, built to practise React, Tailwind CSS and sharing my journey in public.",
+    stack: ["React", "Tailwind CSS", "Vite"],
   },
 ];
 
@@ -106,32 +106,32 @@ const skillGroups = [
   {
     icon: Code2,
     title: "Languages",
-    items: ["TypeScript", "Python", "Go", "C / C++", "SQL"],
+    items: ["Python", "JavaScript", "HTML/CSS", "C basics", "SQL (learning)"],
   },
   {
     icon: Braces,
     title: "Frontend",
-    items: ["React", "TanStack", "Tailwind", "Motion", "Accessibility"],
+    items: ["React", "Tailwind CSS", "Responsive design", "Accessibility basics"],
+  },
+  {
+    icon: Sparkles,
+    title: "AI & productivity",
+    items: ["ChatGPT", "Claude", "GitHub Copilot", "Cursor", "Notion"],
   },
   {
     icon: Database,
     title: "Backend & data",
-    items: ["Postgres", "Redis", "GraphQL", "Kafka", "REST design"],
-  },
-  {
-    icon: Cloud,
-    title: "Cloud",
-    items: ["Cloudflare Workers", "AWS", "Docker", "CI/CD", "Observability"],
+    items: ["REST APIs", "JSON", "Postgres basics", "Firebase (exploring)"],
   },
   {
     icon: Cpu,
     title: "Fundamentals",
-    items: ["Algorithms", "Operating systems", "Networking", "Concurrency"],
+    items: ["Logic & problem solving", "Algorithms", "Data structures", "Git"],
   },
   {
     icon: Wrench,
     title: "Toolkit",
-    items: ["Git", "Vitest", "Playwright", "Figma", "Linux"],
+    items: ["VS Code", "GitHub", "Figma", "Command line", "Chrome DevTools"],
   },
 ];
 
@@ -185,21 +185,22 @@ function Hero() {
         <Reveal>
           <span className="glass-panel inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground">
             <span className="pulse-glow inline-block size-2 rounded-full bg-primary" />
-            First-year student · open to internships
+            B.Tech CSE · First year · Starting 2026
           </span>
           <h1 className="mt-6 text-5xl leading-[1.05] font-bold md:text-7xl">
-            I turn messy ideas into <span className="text-gradient">software that ships.</span>
+            Just starting my journey into{" "}
+            <span className="text-gradient">software and AI.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            First-year software engineering student with big curiosity. I'm learning to build
-            things that feel fast, look sharp and actually work.
+            I'm Nayasa, a first-year Computer Science student learning to code, exploring AI tools,
+            and getting ready to build my first real projects and hackathons.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
               href="#projects"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:scale-[1.03] hover:shadow-[var(--shadow-neon)]"
             >
-              View my work <ArrowUpRight className="size-4" />
+              See what I'm learning <ArrowUpRight className="size-4" />
             </a>
             <a
               href="#contact"
@@ -210,9 +211,9 @@ function Hero() {
           </div>
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6">
             {[
-              ["5+", "Class & side projects"],
-              ["1", "Hackathon attended"],
-              ["Yr 1", "Just getting started"],
+              ["Yr 1", "B.Tech CSE student"],
+              ["AI tools", "Currently exploring"],
+              ["Hackathons", "Ready to join"],
             ].map(([value, label]) => (
               <div key={label}>
                 <dt className="font-display text-3xl font-bold text-gradient">{value}</dt>
@@ -228,7 +229,7 @@ function Hero() {
             <div className="glass-panel relative overflow-hidden rounded-[2rem] p-3">
               <img
                 src={profileImage}
-                alt="Stylised neon portrait of Nayasa Gandhi, software engineering student"
+                alt="Portrait of Nayasa Gandhi, a first-year B.Tech Computer Science student"
                 width={816}
                 height={816}
                 className="w-full rounded-[1.5rem] object-cover"
@@ -240,22 +241,13 @@ function Hero() {
                   </p>
                   <p className="text-xs text-muted-foreground">B.Tech CSE · First year</p>
                 </div>
-                <div className="flex gap-2">
-                  <a
-                    href="#contact"
-                    aria-label="GitHub"
-                    className="glass-panel rounded-full p-2 transition-colors hover:border-primary"
-                  >
-                    <Github className="size-4" />
-                  </a>
-                  <a
-                    href="#contact"
-                    aria-label="LinkedIn"
-                    className="glass-panel rounded-full p-2 transition-colors hover:border-primary"
-                  >
-                    <Linkedin className="size-4" />
-                  </a>
-                </div>
+                <a
+                  href="mailto:gandhinayasa540@gmail.com"
+                  aria-label="Email Nayasa Gandhi"
+                  className="glass-panel rounded-full p-2 transition-colors hover:border-primary"
+                >
+                  <Mail className="size-4" />
+                </a>
               </div>
             </div>
           </div>
@@ -314,8 +306,8 @@ function Projects() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Projects"
-          title="Selected work"
-          blurb="Coursework taken too far, hackathon builds and weekend experiments — early days, but every project taught me something."
+          title="Building blocks"
+          blurb="I'm early in my journey, so these are the learning areas and practice projects I'm working on right now."
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {projects.map((project, i) => (
@@ -446,10 +438,10 @@ function Contact() {
             </label>
             <div className="flex flex-wrap items-center justify-between gap-4">
               <a
-                href="mailto:hello@nayasa.dev"
+                href="mailto:gandhinayasa540@gmail.com"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Mail className="size-4" /> hello@nayasa.dev
+                <Mail className="size-4" /> gandhinayasa540@gmail.com
               </a>
               <button
                 type="submit"
@@ -478,7 +470,7 @@ function Portfolio() {
         <Contact />
       </main>
       <footer className="border-t border-border py-8 text-center text-xs text-muted-foreground">
-        Designed and built by Nayasa Gandhi · {new Date().getFullYear()}
+        Built by Nayasa Gandhi as her first website · {new Date().getFullYear()}
       </footer>
     </div>
   );
